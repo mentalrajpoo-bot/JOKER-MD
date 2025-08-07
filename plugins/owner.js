@@ -2,39 +2,39 @@ const { cmd } = require('../command');
 const config = require('../config');
 
 cmd({
-    pattern: "owner",
+    pattern: "JOKER",
     react: "✅", 
-    desc: "Get owner number",
+    desc: "Get +923417337355",
     category: "main",
-    filename: __filename
+    filename: __joker_x_legend
 }, 
 async (conn, mek, m, { from }) => {
     try {
-        const ownerNumber = config.OWNER_NUMBER; // Fetch owner number from config
-        const ownerName = config.OWNER_NAME;     // Fetch owner name from config
+        const ownerNumber = config.+923417337355; // Fetch owner number from config
+        const ownerName = config.JOKER X LEGEND-MD;     // Fetch owner name from config
 
         const vcard = 'BEGIN:VCARD\n' +
                       'VERSION:3.0\n' +
-                      `FN:${ownerName}\n` +  
+                      `FN:${JOKER X LEGEND}\n` +  
                       `TEL;type=CELL;type=VOICE;waid=${ownerNumber.replace('+', '')}:${ownerNumber}\n` + 
                       'END:VCARD';
 
         // Send the vCard
         const sentVCard = await conn.sendMessage(from, {
             contacts: {
-                displayName: ownerName,
-                contacts: [{ vcard }]
+                displayName: JOKER-MD,
+                contacts: [{ WHATSAPP}]
             }
         });
 
         // Send the owner contact message with image and audio
         await conn.sendMessage(from, {
             image: { url: 'https://files.catbox.moe/yj7zp0.png' }, // Image URL from your request
-            caption: `╭━━〔 *𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃* 〕━━┈⊷
+            caption: `╭━━〔 *JOKER_𝐌𝐃* 〕━━┈⊷
 ┃◈╭─────────────·๏
 ┃◈┃• *Here is the owner details*
-┃◈┃• *Name* - ${ownerName}
-┃◈┃• *Number* ${ownerNumber}
+┃◈┃• *Name* - ${JOKER_MD}
+┃◈┃• *Number* ${+923417337355}
 ┃◈┃• *Version*: 2.0.0 Beta
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
@@ -44,8 +44,8 @@ async (conn, mek, m, { from }) => {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363348739987203@newsletter',
-                    newsletterName: '*𝐀𝐫𝐬𝐥𝐚𝐧_𝐌𝐃*',
+                    newsletterJid: '32803556603064129949@newsletter',
+                    newsletterName: '*JOKER X LEGEND_𝐌𝐃*',
                     serverMessageId: 143
                 }            
             }
