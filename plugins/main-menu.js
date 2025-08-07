@@ -351,8 +351,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: config.BOT_NAME,
+                        newsletterJid: '32803556603064129949@newsletter',
+                        newsletterName: config.JOKER-MD,
                         serverMessageId: 143
                     }
                 }
@@ -362,7 +362,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 
         // Send audio
         await conn.sendMessage(from, {
-            audio: { url: 'https://github.com/Arslan-MD/Arslan_MD/blob/main/assets/menu.m4a' },
+            audio: { url: 'https://github.com/Joker-MD/Joker_MD/blob/main/assets/menu.m4a' },
             mimetype: 'audio/mp4',
             ptt: true
         }, { quoted: mek });
